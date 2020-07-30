@@ -7,7 +7,7 @@ def translate(w):  #word is a local variable passed as a parameter in the functi
     if w in data:
         return data[w]  
     elif len(get_close_matches(w,data.keys()))>0: 
-        return "Did you mean %s ?" %get_close_matches(w,data.keys())[0]   
+        return "Did you mean %s ? " %get_close_matches(w,data.keys())[0]   
     else:
         return "The word does not exist. Please check it again." 
 
