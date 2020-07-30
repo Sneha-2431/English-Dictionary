@@ -7,7 +7,7 @@ def translate(w):
     if w in data:
         return data[w]  
     elif len(get_close_matches(w,data.keys()))>0: 
-        yes_no=input("Did you mean %s ? Enter y is yes, or n for no." %get_close_matches(w,data.keys())[0]) 
+        yes_no=input("Did you mean %s ? Enter y is yes, or n for no. " %get_close_matches(w,data.keys())[0]) 
         if yes_no == "y":
             return data[get_close_matches(w,data.keys())[0]]
         elif yes_no == "n":
